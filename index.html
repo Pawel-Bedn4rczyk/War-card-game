@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="E.edge,chrome=1">
+    <title>War card game</title>
+</head>
+<body>
+<div id="container">
+
+    <nav>
+
+        <div>
+            <p>Cpu</p>
+            <p id="cScore">0</p>
+        </div>
+
+        <button id="bStart"></button>
+
+        <div>
+            <p>Player</p>
+            <p id="pScore">0</p>
+        </div>
+
+    </nav>
+
+    <section>
+
+        <aside>
+            <div class="asideTop"></div>
+            <div class="asideBottom"></div>
+        </aside>
+
+        <div id="content">
+
+            <object class="lineDrawing">
+                <embed class="child" src="img/win/youWin1.svg">
+                <embed class="child" src="img/win/cpuWin.svg">
+                <embed class="child" src="img/win/draw.svg">
+            </object>
+
+            <div id="cardCpu"></div>
+            <div id="cardPlayer"></div>
+
+        </div>
+
+        <aside>
+            <div class="asideTop"></div>
+            <div class="asideBottom"></div>
+        </aside>
+
+    </section>
+
+
+</div>
+
+<script type="text/javascript" src="js/selectCpuCard.js"></script>
+<script type="text/javascript" src="js/selectPlayerCard.js"></script>
+<script type="text/javascript" src="js/scores.js"></script>
+<script src="js/anime.min.js"></script>
+<script type="text/javascript" src="js/animations.js"></script>
+<script>
+    const button = document.getElementById("bStart");
+
+    button.addEventListener("click", restartAnim.restart);
+    button.addEventListener("click", restartAnimCpu.restart);
+    button.addEventListener("click", restartAnimPlayer.restart);
+    button.addEventListener("click", showCardOnCpuDiv);
+    button.addEventListener("click", showCardOnPlayerDiv);
+    button.addEventListener("click", takeScore);
+
+</script>
+
+</body>
+</html>
