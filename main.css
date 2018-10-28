@@ -41,12 +41,8 @@ nav {
     width: 100vw;
 }
 
-nav div:first-child {
-    color: #7B4026;
-}
-
-nav div:last-child {
-    color: #5A5A23;
+nav div {
+    color: grey;
 }
 
 section {
