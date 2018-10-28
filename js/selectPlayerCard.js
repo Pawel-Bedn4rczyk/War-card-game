@@ -288,17 +288,4 @@ const showCardOnPlayerDiv = () => {
 
     }
     return playerCardValue;
-    // console.log(`Karta gracza value: ${playerCardValue}`);
 };
-// showCardOnPlayerDiv();
-// showCardOnCpuDiv();
-// module.exports = playerCardValue;
-// removeFromCpuDeck();
-/*console.log(removeFromCpuDeck());
-console.log(`tablica po redukcji : ${[cpuDeck]}`);
-console.log(`Cpu card is: ${cpuCardFromDeck}`);*/
-
-// const Methods = require ('./selectCpuCard');
-
-// console.log(Methods.cpuCard);
-// cpuCard = "3-Club";

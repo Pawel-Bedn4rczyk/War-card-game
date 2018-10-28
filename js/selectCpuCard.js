@@ -288,25 +288,5 @@ const showCardOnCpuDiv = () => {
 
     }
     return cpuCardValue;
-    // return cpuCardValue;
-    // console.log(`Karta cpu value: ${cpuCardValue}`);
-    // wyswietlanie();
+
 };
-// module.exports = cpuCardValue;
-
-// showCardOnCpuDiv();
-/*
-module.exports = {
-    cpuCard: removeFromCpuDeck(),
-    CpuArray:cpuDeck
-};
-*/
-// removeFromCpuDeck();
-/*console.log(removeFromCpuDeck());
-console.log(`tablica po redukcji : ${[cpuDeck]}`);
-console.log(`Cpu card is: ${cpuCardFromDeck}`);*/
-
-// const Methods = require ('./selectCpuCard');
-
-// console.log(Methods.cpuCard);
-// cpuCard = "3-Club";
