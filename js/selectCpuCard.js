@@ -290,3 +290,4 @@ const showCardOnCpuDiv = () => {
     return cpuCardValue;
 
 };
+
