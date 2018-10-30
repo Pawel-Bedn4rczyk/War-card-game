@@ -1,30 +1,25 @@
 let cpuScore = 0;
-let playerScore =0;
+let playerScore = 0;
 
 const takeScore = () => {
     //Add scores
-    if (cpuCardValue === playerCardValue){
-        cpuScore++;
-        playerScore++;
-        document.getElementById('cScore').innerHTML = "- "+cpuScore+" -";
-        document.getElementById('pScore').innerHTML = "- "+playerScore+" -";
-
-    }else if(cpuCardValue>playerCardValue){
-        cpuScore++;
-        document.getElementById('cScore').innerHTML = "- "+cpuScore+" -";
-    }else{
-        playerScore++;
-        document.getElementById('pScore').innerHTML = "- "+playerScore+" -";
+    if (cpuCardValue === playerCardValue) {
+        cScoreInnerHTML();
+        pScoreInnerHTML();
+    } else if (cpuCardValue > playerCardValue) {
+        cScoreInnerHTML();
+    } else {
+        pScoreInnerHTML();
     }
 //Finish
-    if (cpuDeck.length === 0 || playerDeck.length === 0){
+    if (cpuDeck.length === 0 || playerDeck.length === 0) {
         document.getElementById('bStart').disabled = true;
 
-        if(playerScore>cpuScore){
+        if (playerScore > cpuScore) {
             displayPlayerWin();
-        }else if(cpuScore>playerScore){
+        } else if (cpuScore > playerScore) {
             displayCpuWin();
-        }else {
+        } else {
             displayDraw();
         }
     }
@@ -45,8 +40,18 @@ const displayCpuWin = () => {
 };
 
 //Show Draw
-const displayDraw= () => {
+const displayDraw = () => {
     document.querySelector(".lineDrawing").style.display = 'flex';
     document.querySelector(".lineDrawing .child:last-child").style.display = 'block';
     animDraw();
+};
+
+const cScoreInnerHTML = () => {
+    cpuScore++;
+    document.getElementById('cScore').innerHTML = "- " + cpuScore + " -";
+};
+
+const pScoreInnerHTML = () => {
+    playerScore++;
+    document.getElementById('pScore').innerHTML = "- " + playerScore + " -";
 };
