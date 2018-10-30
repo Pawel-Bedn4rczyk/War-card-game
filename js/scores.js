@@ -25,21 +25,18 @@ const takeScore = () => {
     }
 };
 
-//Show Player Win
 const displayPlayerWin = () => {
     document.querySelector(".lineDrawing").style.display = 'flex';
     document.querySelector(".lineDrawing .child:first-child").style.display = 'block';
     animYouWin();
 };
 
-//Show Cpu Win
 const displayCpuWin = () => {
     document.querySelector(".lineDrawing").style.display = 'flex';
     document.querySelector(".lineDrawing .child:nth-child(2)").style.display = 'block';
     animCpuWin();
 };
 
-//Show Draw
 const displayDraw = () => {
     document.querySelector(".lineDrawing").style.display = 'flex';
     document.querySelector(".lineDrawing .child:last-child").style.display = 'block';
