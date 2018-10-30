@@ -65,12 +65,14 @@
 <script>
     const button = document.getElementById("bStart");
 
-    button.addEventListener("click", restartAnim.restart);
-    button.addEventListener("click", restartAnimCpu.restart);
-    button.addEventListener("click", restartAnimPlayer.restart);
-    button.addEventListener("click", showCardOnCpuDiv);
-    button.addEventListener("click", showCardOnPlayerDiv);
-    button.addEventListener("click", takeScore);
+    button.addEventListener("click", function(){
+        restartAnim.restart();
+        restartAnimCpu.restart();
+        restartAnimPlayer.restart();
+        showCardOnCpuDiv();
+        showCardOnPlayerDiv();
+        takeScore();
+    } );
 
 </script>
 
